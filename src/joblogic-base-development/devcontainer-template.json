@@ -1,0 +1,40 @@
+{
+    "id": "joblogic-base-development",
+    "version": "1.0.0",
+    "name": "My Custom Dev Container Template",
+    "description": "A customizable development container template with common tools and languages",
+    "documentationURL": "https://github.com/yourusername/your-repo",
+    "licenseURL": "https://github.com/yourusername/your-repo/blob/main/LICENSE",
+    "options": {
+        "nodeVersion": {
+            "type": "string",
+            "proposals": [
+                "18",
+                "20",
+                "lts"
+            ],
+            "default": "lts",
+            "description": "Select the Node.js version to install"
+        },
+        "pythonVersion": {
+            "type": "string",
+            "proposals": [
+                "3.9",
+                "3.10",
+                "3.11",
+                "3.12"
+            ],
+            "default": "3.11",
+            "description": "Select the Python version to install"
+        },
+        "includeDatabase": {
+            "type": "boolean",
+            "default": false,
+            "description": "Include PostgreSQL database service"
+        }
+    },
+    "platforms": [
+        "linux/amd64",
+        "linux/arm64"
+    ]
+}
